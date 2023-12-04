@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./img/Mobile-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main {
+  color: white;
+  font-family: "Red Hat Text", sans-serif;
+  padding-top: 21.28%;
+  width: 87.2%;
+  margin-bottom: 163px;
+}
+
+.countdown {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 16px;
+}
+
+.countdown__title {
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 6.14px;
+  text-align: center;
+  margin-bottom: 8%;
+  line-height: 1.3;
+}
+
+.item__box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+}
+
+.countdown__item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.countdown__number {
+  position: absolute;
+  top: 14px;
+  left: 13px;
+  font-size: 36px;
+  color: #fb5e84;
+}
+.countdown__h5 {
+  color: #8385a9;
+  font-size: 7px;
+  text-transform: uppercase;
+}
+
+.desktop__item-box {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.desktop__days,
+.desktop__days {
+  text-align: center;
+}
+
+.desktop__days {
+  color: #8385a9;
+}
+
+.desktop__countdown {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.desktop__countdown,
+.footer__desktop {
+  display: none;
+}
+
+.footer__mobile {
+  position: relative;
+}
+
+.footer__mobile-dec {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  z-index: 0;
+}
+a {
+  text-decoration: none;
+}
+.social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  position: absolute;
+  left: 119px;
+  bottom: -100px;
+  z-index: 4;
+}
+
+footer .footer__desktop {
+  width: 100%;
+}
+
+.desktop {
+  display: none;
+}
+
+@media screen and (width > 375px) {
+  body {
+    background-image: url(./img/Desktop.jpg);
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .main {
+    padding-top: 9.16%;
+    max-width: 35%;
+    margin-bottom: 30px;
+  }
+
+  .countdown__title {
+    font-size: 22px;
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 13%;
+  }
+  
+  .footer__desktop {
+    display: block;
+  }
+
+  .footer__mobile,
+  .mobile {
+    display: none;
+  }
+
+  .countdown {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-content: center;
+    justify-content: center;
+    gap: 32px;
+    margin-bottom: 18.75%;
+  }
+
+  .img__block .footer__desktop,
+  .footer {
+    width: 100%;
+  }
+
+  .social {
+    left: 555px;
+    bottom: 0px;
+  }
+
+  .countdown__number {
+    font-size: 80px;
+    line-height: 0.88;
+    color: #fb5e84;
+    position: absolute;
+    top: 34px;
+    left: 22px;
+  }
+
+  .desktop__h5 {
+    font-size: 14px;
+    line-height: 1.32;
+    letter-spacing: 5.32px;
+  }
+
+  .desktop {
+    display: block;
+  }
+}
